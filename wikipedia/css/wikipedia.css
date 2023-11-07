@@ -2,13 +2,14 @@ body{
     font-family: 'Lucida Grande' , 'Lucida Sans Unicode' , 'Lucida Sana' , 'Verdana' , 'sans-serif';
     font-size:18px; 
     padding: 0 10%;
+    Color: #0d0d0d;
 
 }
 h1,
 h2,
 h3 {
     font-family: 'Playfair Display', serif;
-    color: #e349aa
+    color: #363536
 }
 h1{
     font-size: 2em;
@@ -21,24 +22,8 @@ h2{
 h3{
     font-size: 1em; 
 }
-body {
-	padding: 0 10%;
-}
+
 p{
-    text-align: left;
-	font-size: 18px;
 	letter-spacing: 0.08px;
-	line-height: 26px;
 	word-wrap: break-word;
-	margin-bottom: 30px;
-}
-body {
-    Color: #f7f7fc;
-    margin: 0;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 100px 1fr;
-  min-height: 100vh;
-  min-width: 100vh;
 }
