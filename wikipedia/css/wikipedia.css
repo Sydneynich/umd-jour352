@@ -20,3 +20,10 @@ h2{
 h3{
     font-size: 1em; 
 }
+p{
+    text-align: left;
+	font-size: 18px;
+	letter-spacing: 0.08px;
+	line-height: 26px;
+	word-wrap: break-word;
+	margin-bottom: 30px;}
