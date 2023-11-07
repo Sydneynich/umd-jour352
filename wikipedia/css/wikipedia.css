@@ -41,10 +41,3 @@ body {
   min-height: 100vh;
   min-width: 100vh;
 }
-a {
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-  }
- 
