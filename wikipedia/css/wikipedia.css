@@ -31,3 +31,38 @@ p{
 	word-wrap: break-word;
 	margin-bottom: 30px;
 }
+body {
+    Color: #f7f7fc;
+    margin: 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #88f;
+    border-radius: 4px;
+    color: blue;
+    outline: 0;
+    font-size: 12px;
+  }
+  
+  button:active {
+    background: var(--light-gray);
+  }
+  
+  button.primary {
+    color: #fff;
+    background: blue;
+    border-color: blue;
+  }
