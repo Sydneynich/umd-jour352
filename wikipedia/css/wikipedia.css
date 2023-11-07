@@ -20,6 +20,9 @@ h2{
 h3{
     font-size: 1em; 
 }
+body {
+	padding: 0 10%;
+}
 p{
     text-align: left;
 	font-size: 18px;
