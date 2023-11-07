@@ -24,7 +24,7 @@ body {
 	padding: 0 10%;
 }
 p{
-    text-align: left;
+    text-align: center;
 	font-size: 18px;
 	letter-spacing: 0.08px;
 	line-height: 26px;
@@ -47,9 +47,4 @@ a {
 a:hover {
     text-decoration: underline;
   }
-  h1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background: var(--light-gray);
-  }
-  
+ 
