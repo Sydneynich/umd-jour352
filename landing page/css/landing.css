@@ -1,0 +1,17 @@
+body{
+    background-color:rgb(177, 209, 242);
+}
+
+header{
+    text-align: center;
+    background-color: white;
+    color:rgb(48, 50, 52);
+}
+
+.nav-link{
+    color:aliceblue;
+}
+.about{
+    text-align: center;
+    color:green;
+}
