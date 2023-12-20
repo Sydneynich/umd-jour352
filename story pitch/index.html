@@ -7,6 +7,80 @@
     <!-- Bootstrap CSS CDN link -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            animation: slideIn 1s ease-out;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 0;
+            animation: slideIn 1s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #343a40;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            color: #555555;
+            animation: slideIn 1s ease-out;
+        }
+
+        .article-section {
+            margin-bottom: 40px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .divider {
+            border-top: 1px solid #343a40;
+            margin: 40px 0;
+            animation: slideIn 1s ease-out;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +99,7 @@
                 and safety precautions for all DMV drivers. </p>
             <!-- Image of a broken car -->
             <img src="https://img.freepik.com/free-photo/close-up-man-trying-break-into-car_23-2149133053.jpg?w=1480&t=st=1703041867~exp=1703042467~hmac=3776ed04a4e1b39af57d7ab4bab446434cdee303f16ea5d7268f329011680d98
-              " alt="Broken Car" class="img-fluid mt-3" style="max-width: 100%; height: auto;">
+              " alt="Broken Car" class="img-fluid mt-3" style="max-width: 100%; height: auto;" data-aos="fade-up">
             <!-- New section -->
             <section class="mt-4">
                 <div class="row">
@@ -41,10 +115,9 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <!-- Images for the column -->
                         <div class="row">
                             <img src="https://wjla.com/resources/media/11d80042-c7fe-4133-9c86-ad863c180c51-medium16x9_Untitleddesign.png"
-                                alt="Image 1" class="img-fluid mb-3" style="height: 300px;">
+                                alt="Image 1" class="img-fluid mb-3" style="height: 300px;" data-aos="fade-down">
                         </div>
                         <div class="mt-4">
                             <h2>Data from MPDC</h2>
@@ -70,12 +143,21 @@
                             This is the largest federal carjacking arrest in D.C. of the year. </p>
                     </div>
                     <div class="col-md-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/D9cUmxzHnuU?si=9DBALUzvYddirOo-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/D9cUmxzHnuU?si=9DBALUzvYddirOo-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe  data-aos="fade-up">
                     </div>
                 </div>
             </section>
-
-            <!-- More content goes here -->
+            <hr class="my-5">
+            <div class="paragraph-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Stay Safe, D.C.</h2>
+                            <p>Lock your doors, stay aware and drive safely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </main>
 
@@ -83,10 +165,16 @@
         <p>&copy; 2023 Car Jackings Awareness</p>
     </footer>
 
-    <!-- Bootstrap JS CDN links (optional for Bootstrap JS functionalities) -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Animation duration in milliseconds
+            once: true, // Animation will only occur once on scroll
+        });
+    </script>
 </body>
 
 </html>
