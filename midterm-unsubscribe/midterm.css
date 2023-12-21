@@ -1,11 +1,21 @@
 .results {
     background-color: black;
-    color: white;
+    color: white(11, 11, 11);
+    margin: 0;
 
-}
-.header {
+ }
+ 
+ 
+ .header {
     min-height: 100vh;
-}
-.results section {
+ }
+ 
+ 
+ .results section {
     min-height: 80vh;
-}
+    body {
+        background-color: black;
+        color: black;
+        margin: 0;
+    }
+ 
